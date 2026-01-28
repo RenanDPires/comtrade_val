@@ -1,0 +1,17 @@
+XNGB/
+XNGB_old/
+OSC/
+OSC_Ibiuna/
+OSCILOS_BMTE/
+SE_Foz_do_Iguacu/
+SE_Ibiuna/
+WaveForms_0/
+WaveForms_1/
+WaveForms_04092025_24092025_old/
+Furnas/
+apps/
+
+# Arquivos compactados
+*.zip
+*.7z
+*.zic

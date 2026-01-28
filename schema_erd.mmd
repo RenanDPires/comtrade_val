@@ -1,0 +1,87 @@
+erDiagram
+  "osci.dim_config_snapshot" {
+    text cfg_id PK
+    text version_tag
+    text payload_json
+    text effective_from
+    text effective_to
+  }
+  "osci.dim_ied" {
+    text ied_id PK
+    text sub_id
+    text descricao
+    text created_at
+    text updated_at
+  }
+  "osci.dim_ied_digital" {
+    text ied_id PK
+    text idx1 PK
+    text id_hint
+    text description
+  }
+  "osci.dim_ied_expected_file" {
+    text ied_id PK
+    text ext PK
+  }
+  "osci.dim_subestacao" {
+    text sub_id PK
+    text nome
+    text base_dir
+    text municipio
+    text uf
+    text lat
+    text lon
+    text created_at
+    text updated_at
+  }
+  "osci.fato_analysis_digital" {
+    text created_at
+    text sub_id PK
+    text ied_id PK
+    text stem PK
+    text channel_index PK
+    text channel_name
+    text id_hint
+    text description
+    text triggered
+    text first_rise_dt
+    text n_rises
+    text cfg_id
+  }
+  "osci.fato_scan_pkg" {
+    text created_at
+    text sub_id PK
+    text ied_id PK
+    text directory
+    text stem PK
+    text expected
+    text present
+    text missing
+    text zero_kb
+    text size_cfg
+    text size_dat
+    text size_hdr
+    text size_inf
+    text max_arrival_skew_s
+    text received_ts_epoch
+    text integrity_ok
+    text cfg_id
+  }
+  "osci.v_osci_subestacao_dim" {
+    text sub_id
+    text subestacao_nome
+    text municipio
+    text uf
+    text lat
+    text lon
+    text ieds
+  }
+  "osci.dim_ied" }o--|| "osci.dim_subestacao" : dim_ied_sub_id_fkey
+  "osci.dim_ied_expected_file" }o--|| "osci.dim_ied" : dim_ied_expected_file_ied_id_fkey
+  "osci.dim_ied_digital" }o--|| "osci.dim_ied" : dim_ied_digital_ied_id_fkey
+  "osci.fato_scan_pkg" }o--|| "osci.dim_ied" : fato_scan_pkg_ied_id_fkey
+  "osci.fato_scan_pkg" }o--|| "osci.dim_subestacao" : fato_scan_pkg_sub_id_fkey
+  "osci.fato_scan_pkg" }o--|| "osci.dim_config_snapshot" : fk_scan_cfg
+  "osci.fato_analysis_digital" }o--|| "osci.dim_ied" : fato_analysis_digital_ied_id_fkey
+  "osci.fato_analysis_digital" }o--|| "osci.dim_subestacao" : fato_analysis_digital_sub_id_fkey
+  "osci.fato_analysis_digital" }o--|| "osci.dim_config_snapshot" : fk_analysis_cfg

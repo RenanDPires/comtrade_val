@@ -1,0 +1,184 @@
+{
+  "substations": [
+    {
+      "id": "SE_RJTRIO",
+      "base_dir": "D:/Projetos/comtrade_val/WaveForms_1",
+      "ieds": [
+        {
+          "id": "RJTRIO_PL1_UPD1",
+          "expected_files": [
+            ".cfg",
+            ".dat",
+            ".hdr"
+          ],
+          "channels": {
+            "digitals": [
+              {
+                "index": 1,
+                "id_hint": "VO1",
+                "description": "TRIGGER_OSC"
+              },
+              {
+                "index": 2,
+                "id_hint": "CI2",
+                "description": "MCB TP ABERTO"
+              },
+              {
+                "index": 3,
+                "id_hint": "CI3",
+                "description": "FLH COMUT PCP"
+              }
+            ]
+          }
+        },
+        {
+          "id": "RJTRIO_PL1_UPD2",
+          "expected_files": [
+            ".cfg",
+            ".dat",
+            ".hdr"
+          ],
+          "channels": {
+            "digitals": [
+              {
+                "index": 1,
+                "id_hint": "VO1",
+                "description": "TRIGGER_OSC"
+              },
+              {
+                "index": 2,
+                "id_hint": "CI2",
+                "description": "MCB TP ABERTO"
+              },
+              {
+                "index": 3,
+                "id_hint": "CI3",
+                "description": "FLH COMUT PCP"
+              }
+            ]
+          }
+        },
+        {
+          "id": "RJTRIO_PL2_UPD3",
+          "expected_files": [
+            ".cfg",
+            ".dat",
+            ".hdr"
+          ],
+          "channels": {
+            "digitals": [
+              {
+                "index": 1,
+                "id_hint": "VO1",
+                "description": "TRIGGER_OSC"
+              },
+              {
+                "index": 2,
+                "id_hint": "CI2",
+                "description": "MCB TP ABERTO"
+              },
+              {
+                "index": 3,
+                "id_hint": "CI3",
+                "description": "FLH COMUT PCP"
+              }
+            ]
+          }
+        },
+        {
+          "id": "RJTRIO_PL2_UPD4",
+          "expected_files": [
+            ".cfg",
+            ".dat",
+            ".hdr"
+          ],
+          "channels": {
+            "digitals": [
+              {
+                "index": 1,
+                "id_hint": "VO1",
+                "description": "TRIGGER_OSC"
+              },
+              {
+                "index": 2,
+                "id_hint": "CI2",
+                "description": "MCB TP ABERTO"
+              },
+              {
+                "index": 3,
+                "id_hint": "CI3",
+                "description": "FLH COMUT PCP"
+              }
+            ]
+          }
+        }
+      ],
+      "location": {
+        "name": "Sub Terminal Rio (Paracambi, RJ)",
+        "lat": -22.656111,
+        "lon": -43.768611,
+        "datum": "WGS84",
+        "source": "Wikimapia + Wikipedia (Paracambi)",
+        "accuracy": "approx"
+      }
+    },
+    {
+      "id": "SE_PAXNGX",
+      "base_dir": "D:/Projetos/comtrade_val/WaveForms_1",
+      "ieds": [
+        {
+          "id": "PAXNGX_PL1_UPD1",
+          "expected_files": [
+            ".cfg",
+            ".dat",
+            ".hdr"
+          ],
+          "channels": {
+            "digitals": [
+              {
+                "index": 1,
+                "id_hint": "VO1",
+                "description": "TRIGGER_OSC"
+              },
+              {
+                "index": 2,
+                "id_hint": "CI3",
+                "description": "FLH COMUT PCP"
+              }
+            ]
+          }
+        },
+        {
+          "id": "PAXNGX_PL2_UPD3",
+          "expected_files": [
+            ".cfg",
+            ".dat",
+            ".hdr"
+          ],
+          "channels": {
+            "digitals": [
+              {
+                "index": 1,
+                "id_hint": "VO1",
+                "description": "TRIGGER_OSC"
+              },
+              {
+                "index": 2,
+                "id_hint": "CI3",
+                "description": "FLH COMUT PCP"
+              }
+            ]
+          }
+        }
+      ],
+      "location": {
+        "name": "Sub Xingu (Anapu, PA)",
+        "lat": -3.11866,
+        "lon": -51.73973,
+        "datum": "WGS84",
+        "source": "Mapcarta/OSM + EPE/MME (Vila Belo Monte)",
+        "accuracy": "approx (~few km)"
+      }
+    }
+  ]
+}

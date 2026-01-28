@@ -1,0 +1,80 @@
+{
+  "substations": [
+    {
+      "id": "SE_RJTRIO",
+      "base_dir": "C:/Users/renan/OneDrive/Área de Trabalho/WaveForms_1",
+      "ieds": [
+        {
+          "id": "RJTRIO_PL1_UPD1",
+          "expected_files": [".cfg", ".dat", ".hdr"],
+          "channels": {
+            "digitals": [
+              { "index": 1, "id_hint": "VO1", "description": "TRIGGER_OSC"},
+              { "index": 2, "id_hint": "CI2", "description": "MCB TP ABERTO"},
+              { "index": 3, "id_hint": "CI3", "description": "FLH COMUT PCP"}
+            ]
+          }
+        },
+        {
+          "id": "RJTRIO_PL1_UPD2",
+          "expected_files": [".cfg", ".dat", ".hdr"],
+          "channels": {
+            "digitals": [
+              { "index": 1, "id_hint": "VO1", "description": "TRIGGER_OSC"},
+              { "index": 2, "id_hint": "CI2", "description": "MCB TP ABERTO"},
+              { "index": 3, "id_hint": "CI3", "description": "FLH COMUT PCP"}
+            ]
+          }
+        },
+        {
+          "id": "RJTRIO_PL2_UPD3",
+          "expected_files": [".cfg", ".dat", ".hdr"],
+          "channels": {
+            "digitals": [
+              { "index": 1, "id_hint": "VO1", "description": "TRIGGER_OSC"},
+              { "index": 2, "id_hint": "CI2", "description": "MCB TP ABERTO"},
+              { "index": 3, "id_hint": "CI3", "description": "FLH COMUT PCP"}
+            ]
+          }
+        },
+        {
+          "id": "RJTRIO_PL2_UPD4",
+          "expected_files": [".cfg", ".dat", ".hdr"],
+          "channels": {
+            "digitals": [
+              { "index": 1, "id_hint": "VO1", "description": "TRIGGER_OSC"},
+              { "index": 2, "id_hint": "CI2", "description": "MCB TP ABERTO"},
+              { "index": 3, "id_hint": "CI3", "description": "FLH COMUT PCP"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "SE_PAXNGX",
+      "base_dir": "C:/Users/renan/OneDrive/Área de Trabalho/WaveForms_1",
+      "ieds": [
+        {
+          "id": "PAXNGX_PL1_UPD1",
+          "expected_files": [".cfg", ".dat", ".hdr"],
+          "channels": {
+            "digitals": [
+              { "index": 1, "id_hint": "VO1", "description": "TRIGGER_OSC"},
+              { "index": 2, "id_hint": "CI3", "description": "FLH COMUT PCP"}
+            ]
+          }
+        },
+        {
+          "id": "PAXNGX_PL2_UPD3",
+          "expected_files": [".cfg", ".dat", ".hdr"],
+          "channels": {
+            "digitals": [
+              { "index": 1, "id_hint": "VO1", "description": "TRIGGER_OSC"},
+              { "index": 2, "id_hint": "CI3", "description": "FLH COMUT PCP"}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
