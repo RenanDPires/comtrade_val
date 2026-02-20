@@ -34,7 +34,7 @@ SCAN_CSV_TPL = "scan_{sub}.csv"
 ANALYSIS_CSV_TPL = "analysis_{sub}.csv"
 
 VALID_EXTS = {".cfg", ".dat", ".hdr", ".inf"}
-TZ = ZoneInfo("America/Sao_Paulo")
+TZ = ZoneInfo("UTC")
 
 # =============================================================================
 # Conexão PG
