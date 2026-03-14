@@ -34,7 +34,7 @@ SCAN_CSV_TPL = "scan_{sub}.csv"
 ANALYSIS_CSV_TPL = "analysis_{sub}.csv"
 
 VALID_EXTS = {".cfg", ".dat", ".hdr", ".inf"}
-TZ = ZoneInfo("UTC")
+TZ = ZoneInfo("America/Sao_Paulo")
 
 # =============================================================================
 # Conexão PG
@@ -723,6 +723,7 @@ def get_active_cfg_id(engine: Engine) -> int | None:
 # =============================================================================
 
 def main():
+    print(f'Inicio em: {datetime.now(tz=TZ).isoformat()}\n')
     engine = get_pg_engine()
 
     # carrega configuração runtime do banco
@@ -809,6 +810,7 @@ def main():
 
         # 3b) grava no Postgres
         write_analysis_df_to_pg(df_analysis, sub_id, engine, cfg_id=cfg_id)
+        print(f'Fim em: {datetime.now(tz=TZ).isoformat()}\n')
 
 
 if __name__ == "__main__":
